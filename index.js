@@ -2,12 +2,14 @@ var guestNames = ["Ally", "Brennan", "Emily", "Lou", "Murph", "Sioban", "Zac"];
 
 var guest1 = {
   name: "Erika",
-  favCandy: ['Snickers', 'candy corn']
+  favCandy: ['Snickers', 'candy corn'],
+  rsvp: false
 }
 
 var guest2 = {
   name: "Aabria",
-  favCandy: ['Butterfinger']
+  favCandy: ['Butterfinger'],
+  rsvp: true
 }
 
 function addTwoNumbers(num1, num2) {
@@ -26,5 +28,7 @@ function welcomeGuests(array) {
 } 
 
 function addGuest(allGuests, newGuest) {
-  allGuests.push(newGuest.name);
+  if (newGuest.rsvp) {
+    allGuests.push(newGuest.name);
+  }
 }
