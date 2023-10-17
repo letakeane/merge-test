@@ -19,3 +19,7 @@ function welcomeGuests(array) {
     console.log('Welcome to the party, ' + array[i]);
   }
 } 
+
+function addGuest(allGuests, newGuest) {
+  allGuests.push(newGuest.name);
+}
