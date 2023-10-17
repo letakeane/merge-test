@@ -1,13 +1,15 @@
-var guestNames = ["Ally", "Emily", "Lou", "Sioban", "Zac"];
+var guestNames = ["Ally", "Brennan", "Emily", "Lou", "Murph", "Sioban", "Zac"];
 
 var guest1 = {
   name: "Erika",
-  favCandy: ['Snickers', 'candy corn']
+  favCandy: ['Snickers', 'candy corn'],
+  rsvp: false
 }
 
 var guest2 = {
   name: "Aabria",
-  favCandy: ['Butterfinger']
+  favCandy: ['Butterfinger'],
+  rsvp: true
 }
 
 function makeCandyStatement(obj) {
@@ -16,15 +18,12 @@ function makeCandyStatement(obj) {
 
 function welcomeGuests(array) {
   for (var i = 0; i < array.length; i++) {
-    console.log('Welcome to the party, ' + array[i]);
+    console.log('Welcome to the party, ' + array[i])
   }
-} 
-
-function addGuest(allGuests, newGuest) {
-  allGuests.push(newGuest.name);
 }
 
-function makeCandyList(guest1, guest2) {
-  var list = [...guest1.favCandy, ...guest2.favCandy];
-  return list;
+function addGuest(allGuests, newGuest) {
+  if (newGuest.rsvp) {
+    allGuests.push(newGuest.name);
+  }
 }
