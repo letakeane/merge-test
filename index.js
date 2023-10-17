@@ -1,4 +1,4 @@
-var guestNames = ["Ally", "Brennan", "Emily", "Lou", "Murph", "Sioban", "Zac"];
+var guestNames = ["Ally", "Emily", "Lou", "Sioban", "Zac"];
 
 var guest1 = {
   name: "Erika",
@@ -8,11 +8,6 @@ var guest1 = {
 var guest2 = {
   name: "Aabria",
   favCandy: ['Butterfinger']
-}
-
-function addTwoNumbers(num1, num2) {
-  var sum = num1 + num2;
-  return sum;
 }
 
 function makeCandyStatement(obj) {
@@ -27,4 +22,9 @@ function welcomeGuests(array) {
 
 function addGuest(allGuests, newGuest) {
   allGuests.push(newGuest.name);
+}
+
+function makeCandyList(guest1, guest2) {
+  var list = [...guest1.favCandy, ...guest2.favCandy];
+  return list;
 }
