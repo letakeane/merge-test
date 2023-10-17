@@ -1,8 +1,13 @@
 var guestNames = ["Ally", "Brennan", "Emily", "Lou", "Murph", "Sioban", "Zac"];
 
-var guest = {
+var guest1 = {
   name: "Erika",
   favCandy: ['Snickers', 'candy corn']
+}
+
+var guest2 = {
+  name: "Aabria",
+  favCandy: ['Butterfinger']
 }
 
 function addTwoNumbers(num1, num2) {
